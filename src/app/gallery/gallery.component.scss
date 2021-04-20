@@ -1,0 +1,25 @@
+.gallery {
+  &__cards {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 8rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__card {
+    margin: 0;
+    padding: 0;
+    flex: 0 0 32%;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__picture {
+    width: 100%;
+    border-radius: 0.25rem;
+  }
+}

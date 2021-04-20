@@ -1,0 +1,51 @@
+.contact {
+  background-color: #f9f9f9;
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  &__field,
+  &__sub-title,
+  &__form {
+    margin-bottom: 1.5rem;
+  }
+  &__field,
+  &__sub-title,
+  &__form,
+  &__title,
+  &__text-area {
+    border-radius: 0.25rem;
+  }
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__field--itens-right {
+    align-items: flex-end;
+  }
+
+  &__label {
+    margin-bottom: 0.25rem;
+  }
+  &__input {
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    border: 0.0625rem solid #e7e7e7;
+    box-sizing: border-box;
+  }
+  &__text-area {
+    padding: 0.5rem;
+    border: 0.0625rem solid #e7e7e7;
+    box-sizing: border-box;
+  }
+
+  &__link {
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+  }
+}

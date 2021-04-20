@@ -1,0 +1,9 @@
+<section class="gallery">
+  <h1 class="gallery__title">Some concept works</h1>
+
+  <ul class="gallery__cards">
+      <li class="gallery__card" (click)="showModal(url)" *ngFor="let url of imgs">
+          <img class="gallery__picture" [src]="url"/>
+      </li>
+  </ul>
+</section>

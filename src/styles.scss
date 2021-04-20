@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --title-size: 1.5rem;
+}
+
+::placeholder {
+  color: #e7e7e7;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: 4.1875rem 20%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #444;
+  font-size: var(--title-size);
+}
+
+h2 {
+  font-size: calc(var(--title-size) - 0.4rem);
+}
+
+h3 {
+  font-size: calc(var(--title-size) - (0.4rem * 2));
+}
+
+p,
+a,
+button,
+span,
+div {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  color: #999;
+  font-style: normal;
+  line-height: 26px;
+}
+
+a {
+  color: #444;
+}
+
+.modal {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.664);
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+
+  &__banner {
+    width: 60vw;
+    margin: auto;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+      padding: 1rem;
+  }
+
+  h1{
+      text-align: center;
+  }
+
+  .profile__description{
+      text-align: justify;
+  }
+
+  .cards__card{
+      flex: 0 0 100%;
+      margin-bottom: 5rem;
+  }
+
+  .gallery__card{
+      flex: 0 0 100%;
+      margin-bottom: 1.5rem;
+  }
+
+  .modal__banner{
+      width: 80vw;
+  }
+
+}
